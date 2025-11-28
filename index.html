@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV - Gustavo Turrini</title>
+  <style>
+    :root {
+          --primary: #095393;
+    --accent: #0879d1;
+    --text: #ffffff;
+    --muted: #ffffff;
+    --bg: #000000 0;
+    --line: #e6e6e6;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .cv {
+      max-width: 1024px;
+      margin: 0 auto;
+      padding: 32px;
+    }
+    header {
+      display: grid;
+      grid-template-columns: 1fr 220px;
+      gap: 24px;
+      align-items: start;
+      border-bottom: 2px solid var(--line);
+      padding-bottom: 20px;
+      margin-bottom: 24px;
+    }
+    .title h1 {
+      margin: 0;
+      font-size: 28px;
+      line-height: 1.2;
+    }
+    .title .role {
+      margin-top: 6px;
+      font-size: 15px;
+      color: var(--muted);
+    }
+    .figure {
+      width: 180px; height: 220px;
+      border: 1px dashed var(--line);
+      border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .columns {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 28px;
+    }
+    .section { margin-bottom: 28px; }
+    .section h2 {
+      margin: 0 0 12px 0;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--primary);
+    }
+    .item-title { font-weight: 600; color: var(--text); }
+    .muted { color: var(--muted); }
+    .chip-list { display: flex; flex-wrap: wrap; gap: 8px; }
+    .chip {
+ border: 1px solid #000000;
+    padding: 6px 10px;
+    border-radius: 16px;
+    font-size: 12px;
+    color: var(--muted);
+    background: #453f3f;
+    }
+    .list { margin: 0; padding-left: 18px; }
+    .list li { margin: 6px 0; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 18px; }
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+    .table th, .table td {
+    border: 1px solid #2d2424;
+    padding: 10px 12px;
+    vertical-align: top;
+    }
+    .table th {
+   background: #000000;
+    color: var(--text);
+    font-weight: 600;
+    text-align: left;
+    white-space: nowrap;
+    width: 160px;
+    }
+    hr.page-break {
+      border: none;
+      border-top: 1px solid var(--line);
+      margin: 24px 0;
+    }
+    @media print {
+      .cv { padding: 0; }
+      header { border-bottom: 1px solid var(--line); }
+      a { color: inherit; text-decoration: none; }
+      .figure { border-color: #ccc; }
+      hr.page-break { page-break-after: always; }
+    } 
+.figura {
+width: 100%;
+height: 100%;
+border-radius: 4px;
+}
+  </style>
+</head>
+<body>
+  <main class="cv">
+
+    <!-- Encabezado -->
+    <header>
+      <div class="title">
+        <h1>Gustavo Turrini</h1>
+        <div class="role">Técnico IT | Soporte N2 | Microsoft 365 &amp; Active Directory</div>
+      </div>
+      <div class="figure" aria-label="Figura">
+    <img class="figura" src="I:\OneDrive\Escritorio\Documentos\cvs_viejos_nuevos\cvfoto.jpg" /> 
+
+      </div>
+    </header>
+
+    <div class="columns">
+      <!-- Columna izquierda -->
+      <aside>
+        <!-- Contacto -->
+        <section class="section">
+          <h2>Contacto</h2>
+          <div class="grid-2">
+            <div class="item-title">Email</div>
+            <div><a href="mailto:gustavo.turrini222@gmail.com">gustavo.turrini222@gmail.com</a></div>
+
+            <div class="item-title">Dirección</div>
+            <div>Buenos Aires, Argentina</div>
+
+            <div class="item-title">LinkedIn</div>
+            <div>
+              <a href="https://www.linkedin.com/in/gustavoturrini222/" target="_blank" rel="noopener">
+                https://www.linkedin.com/in/gust<br/>avoturrini222/
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Habilidades -->
+        <section class="section">
+          <h2>Habilidades técnicas / blandas</h2>
+
+          <ul class="list">
+            <li>Ética profesional | Trabajo en equipo | Comunicación efectiva</li>
+            <li>Aprendizaje continuo | Resolución de problemas</li>
+            <li>Organización | Atención al detalle | Multitarea</li>
+            <li>Licencia de Conducir B1</li>
+          </ul>
+
+          <div class="chip-list" style="margin-top:10px;">
+            <span class="chip">Administración de Office 365 y Exchange Online</span>
+            <span class="chip">Microsoft Azure</span>
+            <span class="chip">Active Directory</span>
+            <span class="chip">Windows Server</span>
+            <span class="chip">Protocolos de red: TCP/IP</span>
+            <span class="chip">IPv4/IPv6</span>
+            <span class="chip">LAN/WAN/VPN</span>
+          </div>
+        </section>
+
+        <!-- Bloque intermedio (después del PageBreak en el PDF) -->
+        <section class="section">
+          <div class="chip-list">
+            <span class="chip">Fortinet</span>
+            <span class="chip">VoIP</span>
+            <span class="chip">Sysadmin</span>
+            <span class="chip">Virtualización</span>
+          </div>
+          <div class="chip-list" style="margin-top:8px;">
+            <span class="chip">Monitoreo: Zabbix</span>
+            <span class="chip">FortiClient</span>
+          </div>
+          <div class="chip-list" style="margin-top:8px;">
+            <span class="chip">Cloud Computing</span>
+            <span class="chip">Ciberseguridad</span>
+            <span class="chip">IoT</span>
+          </div>
+          <div class="chip-list" style="margin-top:8px;">
+            <span class="chip">Inteligencia Artificial</span>
+            <span class="chip">Ciencia de Datos</span>
+          </div>
+        </section>
+
+        <!-- Idiomas -->
+        <section class="section">
+          <h2>Idiomas</h2>
+          <ul class="list">
+            <li>Inglés - Intermedio</li>
+            <li>Español - Nativo</li>
+          </ul>
+        </section>
+      </aside>
+
+      <!-- Columna derecha -->
+      <section>
+        <!-- Perfil -->
+        <section class="section">
+          <p class="muted" style="margin-top:0;">
+            Profesional de TI con sólida experiencia en soporte técnico y consultoría para entornos híbridos y cloud. Me especializo en la administración de Microsoft 365, Azure AD y redes seguras, brindando soluciones personalizadas que mejoran la productividad y reducen riesgos operativos. Reconocido por mi capacidad para comunicar conceptos técnicos de forma clara, adaptarme a distintos perfiles de cliente y liderar mejoras en infraestructura y procesos. Busco seguir creciendo como referente en soluciones tecnológicas estratégicas.
+          </p>
+        </section>
+
+        <!-- Experiencia -->
+        <section class="section">
+          <h2>Experiencia</h2>
+
+          <table class="table" aria-label="Experiencia">
+            <thead>
+              <tr>
+                <th>2022-02</th>
+                <th>Soporte TI N2</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="3">- actualmente</td>
+                <td>
+                  Silicon Aid, Buenos Aires · Brindo soporte técnico de segundo nivel como consultor para diversos clientes empresariales, adaptándome a entornos híbridos y necesidades específicas. · Administración de múltiples tenants de Microsoft 365, incluyendo Exchange Online, Azure AD, SharePoint y Teams. · Gestión de redes y protocolos (IPV4/IPV6, LAN, WAN, WLAN, VPN), con experiencia en Fortinet y configuración de firewalls. · Implementación de soluciones personalizadas en infraestructura, seguridad y productividad, según el perfil de cada cliente.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  · Administración de servidores Windows, Active Directory y políticas de grupo en entornos corporativos. · Diagnóstico y resolución de incidencias complejas, con seguimiento mediante sistemas de tickets y documentación técnica.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  · Ejecución de pruebas de rendimiento y calidad en sistemas y aplicaciones, asegurando estabilidad y eficiencia operativa. · Reconocido por clientes y compañeros en LinkedIn por habilidades como Office 365, Azure, Exchange Online, interconexión de redes, experiencia del cliente e implementación de soluciones.
+                </td>
+              </tr>
+              <tr>
+                <td rowspan="2">2022-04 - actualmente</td>
+                <td>Soporte TI N2</td>
+              </tr>
+              <tr>
+                <td>
+                  Violetta Cosméticos, Buenos Aires · Responsable de la gestión y mantenimiento de una infraestructura híbrida basada en Microsoft 365 para más de 300 usuarios. · Colaboración directa con áreas funcionales para garantizar continuidad operativa y cumplimiento de estándares. · Administración de servicios cloud como Exchange Online,
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <hr class="page-break" />
+
+          <p class="muted" style="margin:0;">
+            SharePoint, Teams y Azure AD, asegurando disponibilidad y seguridad.
+          </p>
+          <p class="muted" style="margin:8px 0 0;">
+            · Monitoreo de servidores y redes, con supervisión del rendimiento y resolución de incidencias en tiempo real.
+          </p>
+          <p class="muted" style="margin:8px 0 0;">
+            · Implementación de mejoras en procesos de TI, optimizando tiempos de respuesta y reduciendo riesgos operativos.
+          </p>
+          <p class="muted" style="margin:8px 0 0;">
+            · Evaluación continua de prácticas de TI, proponiendo soluciones escalables y alineadas a los objetivos del
+          </p>
+
+          <div class="section" style="margin-top:18px;">
+            <div class="item-title" style="margin-bottom:6px;">2022-03 - 2022-12</div>
+            <h3 style="margin:0 0 8px 0; font-size:15px;">Soporte TI N1 · Nini Mayorista, Buenos Aires</h3>
+            <ul class="list">
+              <li>Atención telefónica y gestión del correo electrónico de la empresa.</li>
+              <li>Uso de sistemas informáticos y tecnológicos.</li>
+              <li>Trabajo en equipo para facilitar el cumplimiento de objetivos.</li>
+              <li>Gestión de documentación y archivos.</li>
+              <li>Gestión de tareas y plazos.</li>
+              <li>Desarrollo de proyectos y programas.</li>
+              <li>Actualización constante de conocimientos necesarios para el puesto.</li>
+              <li>Realización de tareas administrativas.</li>
+              <li>Resolución de problemas y atención a incidencias.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Educación -->
+        <section class="section">
+          <h2>EDUC</h2>
+
+          <div class="section" style="margin-bottom:16px;">
+            <div class="item-title">2013-03 - 2020-11</div>
+            <div>Informática, Técnico en Informática</div>
+            <div class="muted">Técnica N1 Manuel Belgrano, Buenos Aires</div>
+          </div>
+
+          <div class="section" style="margin-bottom:16px;">
+            <div class="item-title">2021-04 - 2022-12</div>
+            <div>Análisis en Sistemas TI, Analista TI</div>
+            <div class="muted">ITUOM, Buenos Aires</div>
+            <div class="muted">Estudié Análisis en Sistemas en la ITUOM de manera virtual hasta conseguir mi trabajo en IT.</div>
+          </div>
+
+          <div class="section" style="margin-bottom:16px;">
+            <div class="item-title">2022-04 - 2022-12</div>
+            <div><strong>Introduction to Cybersecurity</strong></div>
+            <div class="muted">Introduction to Cybersecurity by Cisco, Buenos Aires</div>
+            <div><a href="https://www.credly.com/badges/f4b7d18e-fc73-47c5-9ad5-d728cb8f03" target="_blank" rel="noopener">https://www.credly.com/badges/f4b7d18e-fc73-47c5-9ad5-d728cb8f03</a></div>
+          </div>
+
+          <div class="section" style="margin-bottom:16px;">
+            <div class="item-title">2022-05 - 2022-12</div>
+            <div><strong>Networking Basics</strong></div>
+            <div class="muted">Networking Basics by Cisco, Buenos Aires</div>
+            <div><a href="https://www.credly.com/badges/70303b8e-da3c-4f88-85fc-6652d4cebdec" target="_blank" rel="noopener">https://www.credly.com/badges/70303b8e-da3c-4f88-85fc-6652d4cebdec</a></div>
+          </div>
+
+          <hr class="page-break" />
+
+          <div class="section" style="margin-bottom:6px;">
+            <div class="item-title">2023-10 - 2024-02</div>
+            <div><strong>Administering Windows Server Hybrid Core Infrastructure (AZ-800T00)</strong></div>
+            <div class="muted">Administering Windows Server Hybrid Core Infrastructure (AZ800T00), Buenos Aires</div>
+            <div><a href="https://www.educacionit.com/perfil/gustavo-turrini-915421/certificado/68327" target="_blank" rel="noopener">https://www.educacionit.com/perfil/gustavo-turrini-915421/certificado/68327</a></div>
+          </div>
+        </section>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
